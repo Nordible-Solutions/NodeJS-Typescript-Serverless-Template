@@ -12,9 +12,6 @@ Project developed on medium article:
 * [Typescript] - Provides us with a type structure for Javascript
 * [Serverless Framework] - Toolkit for building serverless applications .
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ### Installation and Use
 
 To install dependencies of project.
