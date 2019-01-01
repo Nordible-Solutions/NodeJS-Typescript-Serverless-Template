@@ -1,3 +1,7 @@
+plugins: # List of plugins of use on application
+  - serverless-offline # Get your serverless configuration and run the server local
+  - serverless-plugin-typescript-express # Help us with configuration typescript on serverless
+
 # Project name on the infrastructure created
 service: node-typescript-serverless
 
@@ -9,7 +13,7 @@ provider:
 
 functions: # The array with definitions of lambda functions of the your application 
   getUsers: # Lambda function name
-    handler: handler.getUsers # The function name mapped of the application
+    handler: src/server.handler # The function name mapped of the application
     events: # Array of events that call the function
       - http: # Type of event, the http event selected, it's event is a endpoint mapped on api gateway
           path: users

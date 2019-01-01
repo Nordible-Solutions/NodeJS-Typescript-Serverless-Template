@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "node_modules/.bin/tsc -pretty -p .",
-    "start": "npm run build & node dist/server.js"
+    "start": "serverless offline start"
   },
   "author": "Elias Junior",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "serverless-http": "^1.8.0",
-    "serverless-offline": "^3.31.3"
+    "serverless-offline": "^3.31.3",
+    "serverless-plugin-typescript-express": "^1.0.3"
   }
 }
