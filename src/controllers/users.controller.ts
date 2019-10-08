@@ -67,15 +67,15 @@ const authenticate = async (req: Express.Request, res: Express.Response) => {
             headers: {
                 "X-Kite-Version": 3,
             },
-            data: {
+            form: {
                 "api_key": api_key,
                 "request_token": request_token,
                 "checksum": checksum,
             },
         };
-console.log('options are\n', options)
+        console.log('options are\n', options)
         const accessTokenResponse = await rp(options);
-            console.log('accessTokenResponse \n', accessTokenResponse);
+        console.log('accessTokenResponse \n', accessTokenResponse);
         res.send(accessTokenResponse);
     }
     catch (ex) {
