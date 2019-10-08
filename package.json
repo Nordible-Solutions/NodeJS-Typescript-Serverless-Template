@@ -23,6 +23,6 @@
     "sequelize-typescript": "^0.6.7",
     "serverless-http": "^1.8.0",
     "serverless-offline": "^3.31.3",
-    "serverless-plugin-typescript-express": "^1.0.7"
+    "serverless-plugin-typescript-express": "git+https://ee349e27cddb6176032617b5df2ad9a12b1e5817:x-oauth-basic@github.com/xameeramir/serverless-plugin-typescript-express.git#development"
   }
 }
