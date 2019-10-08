@@ -9,7 +9,7 @@ provider:
   name: aws # Provider name, where the infrastructure has be created
   runtime: nodejs8.10 # The node version where the lambda functions going to run
   stage: dev # Control the environment of application
-  region: us-east-1 # Default region where the lambda functions running
+  region: ap-south-1 # Default region where the lambda functions running
 
 functions: # The array with definitions of lambda functions of the your application 
   getUsers: # Lambda function name
