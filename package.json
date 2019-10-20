@@ -1,5 +1,5 @@
 {
-  "name": "node-typescript-serveless",
+  "name": "ansaar-auth",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,10 +7,10 @@
     "build": "node_modules/.bin/tsc -pretty -p .",
     "start": "serverless offline start"
   },
-  "author": "Elias Junior",
+  "author": "xameeramir",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^11.10.4",
+    "@types/node": "^11.13.22",
     "typescript": "^3.2.2"
   },
   "dependencies": {
