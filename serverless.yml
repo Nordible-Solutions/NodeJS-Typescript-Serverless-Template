@@ -1,6 +1,6 @@
 plugins: # List of plugins of use on application
     - serverless-offline # Get your serverless configuration and run the server local
-    - serverless-plugin-typescript-express
+    - serverless-plugin-typescript-express # Needed to run this typescript serverless project
 
 # Project name on the infrastructure created
 service: ansaar-auth
@@ -12,30 +12,12 @@ provider:
   region: ap-south-1 # Default region where the lambda functions running
 
 functions: # The array with definitions of lambda functions of the your application 
-  getUsers: # Lambda function name
+  authenticate: # Lambda function name
     handler: src/server.handler # The function name mapped of the application
-    events: # Array of events that call the function
-      - http: # Type of event, the http event selected, it's event is a endpoint mapped on api gateway
-          path: users
-          method: get
-  getUserById:
-    handler: src/server.handler
-    events:
-      - http:
-          path: users/{id}
-          method: get
-  createUser:
-    handler: src/server.handler
-    events:
-      - http:
-          path: users
-          method: post
-  authenticate:
-    handler: src/server.handler
-    environment:
+    environment: # Environment variables
       ZERODHA_API_KEY: v957e5r30s3a635q
       ZERODHA_API_SECRET: ly3n9hhu8m7m940xrd6krka5uiqr5310
-    events:
-      - http:
+    events: # Array of events that call the function
+      - http: # Type of event, the http event selected, it's event is a endpoint mapped on api gateway
           path: authenticate
           method: post          
