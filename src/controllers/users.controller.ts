@@ -26,13 +26,10 @@ const authenticate = async (req: Express.Request, res: Express.Response) => {
                 "checksum": checksum,
             },
         };
-        console.log('options are\n', options)
         const accessTokenResponse = await rp(options);
-        console.log('accessTokenResponse \n', accessTokenResponse);
         res.send(accessTokenResponse);
     }
     catch (ex) {
-        console.log('ex \n', ex);
         res.send(ex);
     }
 }
