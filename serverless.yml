@@ -3,7 +3,7 @@ plugins: # List of plugins of use on application
     - serverless-plugin-typescript-express # Needed to run this typescript serverless project
 
 # Project name on the infrastructure created
-service: ansaar-auth
+service: serverless-template
 
 provider:
   name: aws # Provider name, where the infrastructure has be created
@@ -15,9 +15,8 @@ functions: # The array with definitions of lambda functions of the your applicat
   authenticate: # Lambda function name
     handler: src/server.handler # The function name mapped of the application
     environment: # Environment variables
-      ZERODHA_API_KEY: v957e5r30s3a635q
-      ZERODHA_API_SECRET: ly3n9hhu8m7m940xrd6krka5uiqr5310
+      ENV_VARIABLE1: ENV_VARIABLE1_VALUE
     events: # Array of events that call the function
       - http: # Type of event, the http event selected, it's event is a endpoint mapped on api gateway
-          path: authenticate
-          method: post          
+          path: test # The URL path which will be called
+          method: get # The http REST method          
