@@ -3,13 +3,13 @@ plugins: # List of plugins of use on application
     - serverless-plugin-typescript-express
 
 # Project name on the infrastructure created
-service: node-typescript-serverless
+service: ansaar-auth
 
 provider:
   name: aws # Provider name, where the infrastructure has be created
   runtime: nodejs8.10 # The node version where the lambda functions going to run
   stage: dev # Control the environment of application
-  region: us-east-1 # Default region where the lambda functions running
+  region: ap-south-1 # Default region where the lambda functions running
 
 functions: # The array with definitions of lambda functions of the your application 
   getUsers: # Lambda function name
@@ -30,3 +30,12 @@ functions: # The array with definitions of lambda functions of the your applicat
       - http:
           path: users
           method: post
+  authenticate:
+    handler: src/server.handler
+    environment:
+      ZERODHA_API_KEY: v957e5r30s3a635q
+      ZERODHA_API_SECRET: ly3n9hhu8m7m940xrd6krka5uiqr5310
+    events:
+      - http:
+          path: authenticate
+          method: post          
