@@ -1,22 +1,18 @@
-# NodeJS Typescript Serverless Example
+# NodeJS Typescript Serverless Template
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-Project developed on medium article:
-[Create Serverless Application with Express and Typescript — Part 1]
 
 ### Stack
 
-* [NodeJS] - JavaScript runtime built on Chrome's V8 JavaScript engine.
-* [ExpressJS] - Framework most commonly used to build APIs with NodeJS
-* [Typescript] - Provides us with a type structure for Javascript
-* [Serverless Framework] - Toolkit for building serverless applications .
+* [NodeJS](https://nodejs.org/en/download/) - JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [ExpressJS](https://expressjs.com/) - Framework most commonly used to build APIs with NodeJS
+* [Typescript](https://www.typescriptlang.org/index.html#download-links) - Provides us with a type structure for Javascript
+* [Serverless Framework](https://serverless.com/) - Toolkit for building serverless applications .
 
 ### Installation and Use
 
 To install dependencies of project.
 ```
-$ cd node-typescript-serverless
+$ cd serverless-template
 $ npm install
 ```
 To generate files JS.
@@ -45,8 +41,4 @@ License
 ----
 MIT
 
-   [Create Serverless Application with Express and Typescript — Part 1]: https://medium.com/@eliasjcjunior/create-serverless-application-with-express-and-typescript-a4c0c25060b2
-   [ExpressJS]: https://expressjs.com/
-   [Typescript]: https://www.typescriptlang.org/index.html#download-links
-   [NodeJS]: https://nodejs.org/en/download/
-   [Serverless Framework]: https://serverless.com/
+[Credit](https://medium.com/@eliasjcjunior/create-serverless-application-with-express-and-typescript-a4c0c25060b2)
