@@ -6,7 +6,7 @@ import rp from 'request-promise';
 const create = async (req: Express.Request, res: Express.Response) => {
     try {
         const { firstName, lastName } = req.body;
-        const user = new User({ firstName, lastName});
+        const user = new User({ firstName, lastName });
 
         await user.save();
 
@@ -14,7 +14,7 @@ const create = async (req: Express.Request, res: Express.Response) => {
             data: user
         });
 
-    } catch(error) {
+    } catch (error) {
         res.status(500).json({
             status: 'error',
             message: error.message
@@ -30,7 +30,7 @@ const findAll = async (req: Express.Request, res: Express.Response) => {
             data: users
         })
 
-    } catch(error) {
+    } catch (error) {
         res.status(500).json({
             status: 'error',
             message: error.message
@@ -50,7 +50,7 @@ const findById = async (req: Express.Request, res: Express.Response) => {
             data: user
         })
 
-    } catch(error) {
+    } catch (error) {
         res.status(500).json({
             status: 'error',
             message: error.message
@@ -76,7 +76,7 @@ const authenticate = async (req: Express.Request, res: Express.Response) => {
             headers: {
                 "X-Kite-Version": 3,
             },
-            data: {
+            form: {
                 "api_key": api_key,
                 "request_token": request_token,
                 "checksum": checksum,
@@ -84,7 +84,7 @@ const authenticate = async (req: Express.Request, res: Express.Response) => {
         };
 
         const accessTokenResponse = await rp(options);
-            console.log(accessTokenResponse);
+        console.log(accessTokenResponse);
         res.send(accessTokenResponse);
     }
     catch (ex) {
