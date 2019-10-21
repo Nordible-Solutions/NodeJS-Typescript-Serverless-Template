@@ -10,6 +10,28 @@
 
 ### Installation and Use
 
+Setup Servlerless:
+
+```
+$ npm i -g serverless    
+```
+
+Set serverless credentials
+```
+$ serverless config credentials \ 
+    --provider aws \ 
+    --key xxxxxxxxxxxxxx \ 
+    --secret xxxxxxxxxxxxxx
+```
+
+Create a serverless project/service
+```
+$ serverless create --template aws-nodejs --path <project folder name>
+```
+
+This template works with express, typescript and node hence the template is `aws-nodejs`
+
+
 To install dependencies of project.
 ```
 $ cd serverless-template
