@@ -25,6 +25,6 @@
     "sequelize-typescript": "^0.6.7",
     "serverless-http": "^1.8.0",
     "serverless-offline": "^3.31.3",
-    "serverless-plugin-typescript-express": "git+https://<replace with your github secret key>:x-oauth-basic@github.com/nordible/serverless-plugin-typescript-express.git#development"
+    "sls-plugin-typescript-express": "^1.0.4"
   }
 }
