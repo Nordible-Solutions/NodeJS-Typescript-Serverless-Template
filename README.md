@@ -8,7 +8,18 @@
 * [Typescript](https://www.typescriptlang.org/index.html#download-links) - Provides us with a type structure for Javascript
 * [Serverless Framework](https://serverless.com/) - Toolkit for building serverless applications .
 
-### Installation and Use
+### Customization
+
+Node.js changes:
+
+- Add the routes definitions in the `src/routes.ts`
+- Add the corresponding routes handling contollers as new `.ts` files
+
+Serverless changes:
+- Update the `service`
+- Update the functions each mapping to the routes defined in the `src/routes.ts`
+
+### Pre-requisites
 
 Setup Servlerless:
 
@@ -31,6 +42,7 @@ $ serverless create --template aws-nodejs --path <project folder name>
 
 This template works with express, typescript and node hence the template is `aws-nodejs`
 
+### Local setup
 
 To install dependencies of project.
 ```
@@ -46,6 +58,8 @@ Run project.
 ```
 $ npm run start
 ```
+
+### Deployment
 
 Deploy to AWS
 
