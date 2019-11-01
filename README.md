@@ -34,7 +34,7 @@ This template works with express, typescript and node hence the template is `aws
 
 To install dependencies of project.
 ```
-$ cd serverless-template
+$ cd <project folder name>
 $ npm install
 ```
 To generate files JS.
