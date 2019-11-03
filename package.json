@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "build": "node_modules/.bin/tsc -pretty -p .",
-    "start": "serverless offline start"
+    "start": "serverless offline start",
+    "deploy": "serverless deploy"    
   },
   "author": "xameeramir",
   "license": "ISC",
