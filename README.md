@@ -64,7 +64,7 @@ $ npm run start
 Deploy to AWS
 
 ```
-$ serverless deploy
+$ npm run deploy
 ```
 
 If you get a identity related error during deployment
